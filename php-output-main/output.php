@@ -39,16 +39,40 @@
 
     <br><br>
 
-    <?php
-    
-    $linkName = 'Codecademy';
-    $linkURL = 'https://www.codecademy.com/';
-    $linkImage = 'codecademy.png';
-    $linkDescription = 'Learn to code interactively, for free.';
-    
-    ?>
-        
-    
-    <?php echo '<h1>'.$LinkName.'<h1>' ?>
+    <!-- PHP Variables -->
+
+  <?php
+  $linkName = 'Codecademy';
+  $linkURL = 'https://www.codecademy.com/';
+  $linkImage = 'codecademy.png';
+  $linkDescription = 'Learn to code interactively, for free.';
+
+  echo '<h1>' . $linkName . '</h1>';
+
+  echo '<a href=' . $linkURL . ' >' . $linkName . ' </a>';
+  echo '<img src="' . $linkImage . '" alt="Codecademy Image">';
+  echo '<p>' . $linkDescription . '</p>';
+  ?>
+
+  <!-- PHP Array -->
+
+  <?php
+
+  $link['name'] = 'Codecademy';
+  $link['url'] = 'https://www.codecademy.com/';
+  $link['image'] = 'codecademy.png';
+  $link['description'] = 'Learn to code interactively, for free.';
+
+  ?>
+
+  <h1>
+    <?php echo $link['name']; ?>
+  </h1>
+  <p>
+    <?php echo $link['description']; ?>
+  </p>
+  <a href="<?php echo $link['url']; ?>" target="_blank">
+    <img src="<?php echo $link['image']; ?>" alt="<?php echo 'Codecademy Image'; ?>">
+  </a>
   </body>
 </html>
