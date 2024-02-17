@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab Login</title>
+    <link rel="stylesheet" href="lab2.css" type="text/css" />
+    <script src="index.js"></script>
+    <script src="jasmine/src/checkLogin.js"></script>
+    <script src="jasmine/src/md5Encrypt.js"></script>
+    <script src="jasmine/lib/md5.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Login Page</h1>
+      <div class="login">
+        <form class="login__form">
+          <fieldset class="login__fieldset">
+            <legend class="login__legend">Login</legend>
+            <div>
+              <label for="username" class="login__label">User Name:</label>
+              <input
+                type="text"
+                id="username"
+                class="login__txtbox"
+                name="username"
+              />
+            </div>
+            <div>
+              <label for="password" class="login__label">Password:</label>
+              <input
+                type="password"
+                id="password"
+                class="login__txtbox"
+                name="password"
+              />
+            </div>
+            <div>
+              <input type="submit" value="Login" class="login__button" />
+            </div>
+          </fieldset>
+        </form>
+        <div class="output">
+          <p>Username: <span class="output__text output__user"></span></p>
+          <p>Password: <span class="output__text output__pass"></span></p>
+        </div>
+      </div>
+      <div id="result"></div>
+    </main>
+  </body>
+</html>
