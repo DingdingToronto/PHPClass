@@ -19,10 +19,10 @@ include 'connect.php';
 
 // Query to insert data into the database
 $query = "INSERT INTO `students` (`fname`, `lname`, `marks`, `imageURL`) 
-          VALUES ('". mysqli_real_escape_string($connect, $fname)"', 
-          '". mysqli_real_escape_string($connect, $lname)"', 
-          '". mysqli_real_escape_string($connect, $marks)"', 
-          '". mysqli_real_escape_string($connect, $imageURL)"')";
+          VALUES ('". mysqli_real_escape_string($connect, $fname) ."', 
+          '". mysqli_real_escape_string($connect, $lname) ."', 
+          '". mysqli_real_escape_string($connect, $marks) ."', 
+          '". mysqli_real_escape_string($connect, $imageURL) ."')";
 // Execute the query
 $result = mysqli_query($connect, $query);
 

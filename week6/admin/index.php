@@ -7,7 +7,7 @@
   <title>Week 5</title>
 </head>
 <body>
-<?php include 'reusables/nav.php'; ?>
+<?php include '../reusables/nav.php'; ?>
   
   <div class="container">
     <div class="row">
@@ -18,7 +18,7 @@
       </div>
     </div>
     <?php 
-      include 'includes/connect.php';
+      include '../includes/connect.php';
 
       $query = 'SELECT id, fname, lname, marks, grade, `imageURL` FROM `students`';
 

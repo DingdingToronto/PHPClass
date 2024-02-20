@@ -10,10 +10,10 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Student</a>
+          <a class="nav-link" href="/week6/admin/users.php">Users</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/http5225/week5/grades.php">Grades</a>
+          <a class="nav-link" href="/week6/admin/grades.php">Grades</a>
         </li>
       </ul>
     </div>
